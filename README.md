@@ -2,7 +2,7 @@
 
 Objetivo
 
-Análise Estatística para PESSOA (LOCAL, aaaa)
+Análise Estatística para Sidney Glina (Zammi, 2022)
 <!-- Relatório técnico para PESSOA (LOCAL, aaaa) -->
 
 ## Análises realizadas
