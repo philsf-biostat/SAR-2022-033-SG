@@ -155,20 +155,23 @@ As distribuições das características dos participantes serão resumidas em ta
 
 ### Análise inferencial
 
-Todas as comparações entre os grupos serão avaliadas como análises univariadas.
-Variáveis contínuas serão comparadas entre os grupos com o
-teste t de grupos independentes com a correção de Welch.
+<!-- Todas as comparações entre os grupos serão avaliadas como análises univariadas. -->
+<!-- Variáveis contínuas serão comparadas entre os grupos com o -->
+<!-- teste t de grupos independentes com a correção de Welch. -->
 <!-- teste t pareado. -->
 <!-- teste de Mann-Whitney. -->
 <!-- teste de Wilcoxon. -->
-Diferenças nas distribuições de variáveis categóricas serão avaliadas com o teste
-exato de Fisher.
+<!-- Diferenças nas distribuições de variáveis categóricas serão avaliadas com o teste -->
+<!-- exato de Fisher. -->
 <!-- qui-quadrado. -->
 <!-- McNemar. -->
 
-<!-- Todas as análises inferenciais serão realizadas com base nos modelos estatísticos (descritos na próxima seção). -->
+Todas as análises inferenciais serão realizadas com base nos modelos estatísticos (descritos na próxima seção).
 
 ### Modelagem estatística
+
+A taxa de incidência de correção da curvatura peniana será estimada ajustando modelos de regressão de Poisson.
+Esta abordagem multivariada tem a capacidade de estimar a IRR a partir do número de participantes que atingiram o desfecho primário, ajustando pelas covariáveis.
 
 ### Dados faltantes
 
