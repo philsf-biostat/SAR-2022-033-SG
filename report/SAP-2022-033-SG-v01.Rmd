@@ -77,28 +77,28 @@ Avaliar a eficácia do enxerto Vivendi na correção de curvatura peniana.
 
 ## Dados brutos
 
-A base de dados original possuía
-`r Nvar_orig`
-variáveis coletadas de
-`r Nobs_orig`
-observações.
+<!-- A base de dados original possuía -->
+<!-- `r Nvar_orig` -->
+<!-- variáveis coletadas de -->
+<!-- `r Nobs_orig` -->
+<!-- observações. -->
 
 ## Tabela de dados analíticos
 
-Depois dos procedimentos de limpeza e seleção
-`r Nvar_final`
-variáveis foram incluídas na análise com
-`r Nobs_final`
-observações.
-A Tabela 1 mostra a estrutura dos dados analíticos.
+<!-- Depois dos procedimentos de limpeza e seleção -->
+<!-- `r Nvar_final` -->
+<!-- variáveis foram incluídas na análise com -->
+<!-- `r Nobs_final` -->
+<!-- observações. -->
+<!-- A Tabela 1 mostra a estrutura dos dados analíticos. -->
 
 ```{r analytical data}
-analytical_mockup %>%
-  pander(caption = "**Tabela 1** Estrutura da tabela de dados analíticos após seleção e limpeza das variáveis.")
+# analytical_mockup %>%
+#   pander(caption = "**Tabela 1** Estrutura da tabela de dados analíticos após seleção e limpeza das variáveis.")
 ```
 
-Todas as variáveis da tabela de dados analíticos foram identificadas de acordo com as descrições das variáveis, e os valores foram identificados de acordo com o dicionário de dados providenciado.
-Estas identificações possibilitarão a criação de tabelas de resultados com qualidade de produção final.
+<!-- Todas as variáveis da tabela de dados analíticos foram identificadas de acordo com as descrições das variáveis, e os valores foram identificados de acordo com o dicionário de dados providenciado. -->
+<!-- Estas identificações possibilitarão a criação de tabelas de resultados com qualidade de produção final. -->
 
 # Parâmetros do estudo
 
