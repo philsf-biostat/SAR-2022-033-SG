@@ -1,6 +1,6 @@
 # [title]
 
-Objetivo
+Avaliar a eficácia do enxerto Vivendi na correção de curvatura peniana.
 
 Análise Estatística para Sidney Glina (Zammi, 2022)
 <!-- Relatório técnico para PESSOA (LOCAL, aaaa) -->

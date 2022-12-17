@@ -73,6 +73,8 @@ kable(history)
 
 ## Objetivos
 
+Avaliar a eficácia do enxerto Vivendi na correção de curvatura peniana.
+
 ## Hipóteses
 
 # Dados
