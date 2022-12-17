@@ -1,16 +1,14 @@
-# [title]
+# Plano Analítico para eficácia do enxerto Vivendi na correção de curvatura peniana
 
-Objetivo
+Avaliar a eficácia do enxerto Vivendi na correção de curvatura peniana.
 
-Análise Estatística para PESSOA (LOCAL, aaaa)
-<!-- Relatório técnico para PESSOA (LOCAL, aaaa) -->
+Análise Estatística para Sidney Glina (Zammi, 2022)
+<!-- Relatório técnico para Sidney Glina (Zammi, 2022) -->
 
 ## Análises realizadas
 
 1. Análise descritiva
 1. Análise inferencial
-1. Análise de poder
-1. Imputação de dados faltantes
 1. Modelagem estatística
 
 ## Documentos
