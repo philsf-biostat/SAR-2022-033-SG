@@ -68,6 +68,7 @@ kable(history)
 - IRR: razão de taxas de incidência (*incidence rates ratio*)
 - OR: razão de chances (*odds ratio*)
 - RR: razão de riscos (*risks ratio*)
+- SIS: Enxerto de submucosa do intestino delgado
 
 # Contexto
 
@@ -111,6 +112,11 @@ Estas identificações possibilitarão a criação de tabelas de resultados com 
 ## Critérios de inclusão e exclusão
 
 ## Exposições
+
+Os participantes recrutados para o estudo serão randomizados para inclusão no grupo experimental ou no grupo de controle.
+
+- Experimental: enxerto Vivendi
+- Controle: enxerto SIS
 
 ## Desfechos
 
