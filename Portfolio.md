@@ -1,6 +1,6 @@
 ---
-title: '[title]'
-date: ""
+title: 'Plano Analítico para eficácia do enxerto Vivendi na correção de curvatura peniana'
+date: "2022-12-21"
 permalink: /portfolio/SAR-2022-033/
 redirect_from:
   - /portfolio/SAR-2022-033-SG/
@@ -38,9 +38,9 @@ Análise Estatística para Sidney Glina (Zammi, 2022)
 
 - [PDF][sap]
 
-### Relatório de Análise Estatística (SAR)
+<!-- ### Relatório de Análise Estatística (SAR) -->
 
-- [PDF][sar]
+<!-- - [PDF][sar] -->
 
 <!-- ## Análises associadas -->
 
