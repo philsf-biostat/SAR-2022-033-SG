@@ -58,16 +58,12 @@ kable(history)
 
 # Lista de abreviaturas
 
-- d: tamanho de efeito D de Cohen
-- CV: coeficiente de variação
 - DP: desvio padrão
-- HR: razão de risco (*hazards ratio*)
 - IC: intervalo de confiança
-- IIQ: intervalo interquartílico
 - IMC: índice de massa corpórea
 - IRR: razão de taxas de incidência (*incidence rates ratio*)
-- OR: razão de chances (*odds ratio*)
 - RR: razão de riscos (*risks ratio*)
+- SIS: Enxerto de submucosa do intestino delgado
 
 # Contexto
 
@@ -77,53 +73,97 @@ Avaliar a eficácia do enxerto Vivendi na correção de curvatura peniana.
 
 ## Hipóteses
 
+O uso do Enxerto Vivendi apresenta redução de curvatura peniana comparável ao uso do enxerto SIS em pacientes submetidos a corporoplastia.
+
 # Dados
 
 ## Dados brutos
 
-A base de dados original possuía
-`r Nvar_orig`
-variáveis coletadas de
-`r Nobs_orig`
-observações.
+<!-- A base de dados original possuía -->
+<!-- `r Nvar_orig` -->
+<!-- variáveis coletadas de -->
+<!-- `r Nobs_orig` -->
+<!-- observações. -->
+
+Ao início do estudo os dados brutos serão coletados em uma tabela, que será processada para análise.
+Cada linha da tabela representa todas as informações coletadas de cada participante do estudo, e cada coluna representa uma variável do estudo.
+Cada participante incluído deverá ter um ID de estudo, que deve ser único.
+
+O desfecho primário deve ser registrado como variável contínua, representando apenas o número mensurado (incluindo casas decimais, caso a mensuração permita esta precisão) em cada célula, e sem observações textuais.
+A exposição deve ser registrada como variável binária, em forma de texto (tratamento/controle, ou classificação semelhante), ou como um indicador (tratamento = 1, controle = 0).
+
+Os desfechos secundários deverão ser registrados de acordo com o tipo de variável: contínua ou categórica.
+Variáveis categóricas devem ter um número pré-determinado de categorias de acordo com sua classificação.
+Comorbidades, se coletadas, devem ser registradas como variáveis binárias sempre que possível
+O grupo
+
+Caso haja necessidade de considerar tempo de observação, é preferível que as datas de início e final da observação sejam registradas, ao invés do tempo.
+
 
 ## Tabela de dados analíticos
 
-Depois dos procedimentos de limpeza e seleção
-`r Nvar_final`
-variáveis foram incluídas na análise com
-`r Nobs_final`
-observações.
-A Tabela 1 mostra a estrutura dos dados analíticos.
+
+<!-- Depois dos procedimentos de limpeza e seleção -->
+<!-- `r Nvar_final` -->
+<!-- variáveis foram incluídas na análise com -->
+<!-- `r Nobs_final` -->
+<!-- observações. -->
+<!-- A Tabela 1 mostra a estrutura dos dados analíticos. -->
 
 ```{r analytical data}
-analytical_mockup %>%
-  pander(caption = "**Tabela 1** Estrutura da tabela de dados analíticos após seleção e limpeza das variáveis.")
+# analytical_mockup %>%
+#   pander(caption = "**Tabela 1** Estrutura da tabela de dados analíticos após seleção e limpeza das variáveis.")
 ```
 
-Todas as variáveis da tabela de dados analíticos foram identificadas de acordo com as descrições das variáveis, e os valores foram identificados de acordo com o dicionário de dados providenciado.
+Todas as variáveis da tabela de dados analíticos serão identificadas de acordo com as descrições das variáveis, e os valores foram identificados de acordo com o dicionário de dados.
 Estas identificações possibilitarão a criação de tabelas de resultados com qualidade de produção final.
 
 # Parâmetros do estudo
 
 ## Desenho do estudo
 
+Ensaio clínico controlado e aleatorizado.
+
 ## Critérios de inclusão e exclusão
 
+Apresentem Doença de Peyronie há mais de um ano, com curvatura uniplanar maior que 60° e que comprometam a penetração vaginal e que não se modificou nos últimos seis meses e tenham rigidez peniana satisfatória (resposta adequada ao uso de inibidores de PDE-5 ou teste de ereção com drogas intracavernosas) e que se encaixem nas condições abaixo listadas:
+
+- Ausência de dor peniana à ereção nos últimos 6 meses;
+- Ter parceira sexual;
+- Ter capacidade para responder questionários;
+- Saber ler;
+- Ser maiores de 18 anos.
+
 ## Exposições
+
+Os participantes recrutados para o estudo serão randomizados para inclusão no grupo experimental ou no grupo de controle.
+
+- Experimental: enxerto Vivendi
+- Controle: enxerto SIS
 
 ## Desfechos
 
 **Especificação das medidas de desfecho** (Zarin, 2011):
 
-1. (Domínio)
-2. (Mensuração específica)
-3. (Métrica específica)
-4. (Método de agregação)
+1. (Domínio) Corporoplastia
+2. (Mensuração específica) Curvatura peniana
+3. (Métrica específica) Mudança desde a linha de base (*baseline*)
+4. (Método de agregação) Proporção de participantes com redução da curvatura a <20 graus
 
 **Desfecho primário**
 
+Proporção de participantes com redução da curvatura a < 20 graus comparado ao estado no início do estudo.
+
+**Desfechos secundários**
+
+- Aumento peniano;
+- Mensuração da Satisfação sexual;
+- Frequência de atividade sexual;
+- Mensuração da dor.
+
 ## Covariáveis
+
+- Idade, ou faixa etária.
 
 # Métodos estatísticos
 
@@ -144,7 +184,7 @@ As distribuições das características dos participantes serão resumidas em ta
 
 ### Análise inferencial
 
-Todas as comparações entre os grupos serão avaliadas como análises univariadas.
+As análises inferenciais dos desfechos secundários serão avaliadas como análises univariadas.
 Variáveis contínuas serão comparadas entre os grupos com o
 teste t de grupos independentes com a correção de Welch.
 <!-- teste t pareado. -->
@@ -155,9 +195,12 @@ exato de Fisher.
 <!-- qui-quadrado. -->
 <!-- McNemar. -->
 
-<!-- Todas as análises inferenciais serão realizadas com base nos modelos estatísticos (descritos na próxima seção). -->
+As análises inferenciais do desfecho primário serão realizadas com base nos modelos estatísticos (descritos na próxima seção).
 
 ### Modelagem estatística
+
+A taxa de incidência de correção da curvatura peniana será estimada ajustando modelos de regressão de Poisson.
+Esta abordagem multivariada tem a capacidade de estimar a IRR a partir do número de participantes que atingiram o desfecho primário, ajustando pelas covariáveis.
 
 ### Dados faltantes
 
@@ -211,15 +254,17 @@ Esta análise será realizada utilizando-se o software `R` versão `r getRversio
 **Guideline recomendado de relato completo**
 
 A adoção dos guidelines de relato da rede EQUATOR (<http://www.equator-network.org/>) têm sido ampliada em revistas científicas.
-Recomenda-se que todos os estudos observacionais sigam o guideline STROBE (von Elm et al, 2014).
+<!-- Recomenda-se que todos os estudos observacionais sigam o guideline STROBE (von Elm et al, 2014). -->
+Recomenda-se que todos os ensaios clínicos sigam o guideline CONSORT (Schulz K F, Altman D G, Moher D., 2010).
 
 # Referências
 
-- **SAR-2022-033-SG-v01** -- Eficácia do enxerto Vivendi na correção de curvatura peniana
+<!-- - **SAR-2022-033-SG-v01** -- Eficácia do enxerto Vivendi na correção de curvatura peniana -->
 <!-- - Cohen, J. (1988). Statistical power analysis for the behavioral sciences (2nd Ed.). New York: Routledge. -->
 - Zarin DA, et al. The ClinicalTrials.gov results database -- update and key issues. N Engl J Med 2011;364:852-60 (<https://doi.org/10.1056/NEJMsa1012065>).
 - Gamble C, et al. Guidelines for the Content of Statistical Analysis Plans in Clinical Trials. JAMA. 2017;318(23):2337–2343 (<https://doi.org/10.1001/jama.2017.18556>).
-- von Elm E, Altman DG, Egger M, Pocock SJ, Gøtzsche PC, Vandenbroucke JP; STROBE Initiative. The Strengthening the Reporting of Observational Studies in Epidemiology (STROBE) Statement: guidelines for reporting observational studies. Int J Surg. 2014 Dec;12(12):1495-9 (<https://doi.org/10.1016/j.ijsu.2014.07.013>).
+<!-- - von Elm E, Altman DG, Egger M, Pocock SJ, Gøtzsche PC, Vandenbroucke JP; STROBE Initiative. The Strengthening the Reporting of Observational Studies in Epidemiology (STROBE) Statement: guidelines for reporting observational studies. Int J Surg. 2014 Dec;12(12):1495-9 (<https://doi.org/10.1016/j.ijsu.2014.07.013>). -->
+- Schulz K F, Altman D G, Moher D. CONSORT 2010 Statement: updated guidelines for reporting parallel group randomised trials BMJ 2010; 340 :c332 (<https://doi.org/10.1136/bmj.c332>).
 
 # Apêndice
 
