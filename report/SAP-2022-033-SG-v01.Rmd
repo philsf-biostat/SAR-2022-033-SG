@@ -79,6 +79,8 @@ O uso do Enxerto Vivendi apresenta redução de curvatura peniana comparável ao
 
 ## Dados brutos
 
+N/A
+
 <!-- A base de dados original possuía -->
 <!-- `r Nvar_orig` -->
 <!-- variáveis coletadas de -->
@@ -86,6 +88,8 @@ O uso do Enxerto Vivendi apresenta redução de curvatura peniana comparável ao
 <!-- observações. -->
 
 ## Tabela de dados analíticos
+
+N/A
 
 <!-- Depois dos procedimentos de limpeza e seleção -->
 <!-- `r Nvar_final` -->
